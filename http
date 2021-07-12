@@ -1,0 +1,14 @@
+service http
+{
+	disable = no
+	flags = REUSE
+	socket_type = stream
+	type = UNLISTED
+	port = 8010
+	wait = no
+	user = root
+	log_on_failure += USERID
+	log_type = SYSLOG daemon debug
+	server = /usr/bin/althttpd
+	server_args = -logfile /var/log/althttpd.log -root /home/www -user nobody
+}

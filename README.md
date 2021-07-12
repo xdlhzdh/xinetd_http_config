@@ -1,1 +1,3 @@
-# xinetd_http_config
+# Introduction
+
+	This project is about how to config the althttpd(https://github.com/jesrui/althttpd) service in xinetd.
